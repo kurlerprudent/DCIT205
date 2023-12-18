@@ -42,6 +42,14 @@ app.get('/',(req,res)=> {
     res.send('Name : ')
 })
 
+app.get('/id:',(req,res)=> {
+    res.send('Age : ')
+})
+
+app.post('/',(req,res)=> {
+    res.send('New name')
+})
+
 app.listen(PORT, () => {
   console.log('Server started');
 });
