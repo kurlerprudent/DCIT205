@@ -38,7 +38,9 @@ const patientSchema = new mongoose.Schema({
 
   const Patient = mongoose.model('Patient', patientSchema);
 
-
+app.get('/',(req,res)=> {
+    res.send('Name : ')
+})
 
 app.listen(PORT, () => {
   console.log('Server started');
